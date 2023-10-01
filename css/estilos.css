@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --fuente:  sans-serif, 'Roboto Condensed';
+}
+
+
+header {
+    background-color: #4a0080;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: var(--fuente);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+  }
+  
+  
+  #Principal {
+    margin-top: 60px; /* Asegura que el contenido no se solape con el menú */
+    margin-left: 3%;
+    margin-right: 8%;
+    height: auto; /* Solo para simular un contenido largo */
+  } 
+
+/** PARA EL PRINCIPAL**/
+#Principal{
+    grid-template-columns: auto;
+    /*display:contents;*/
+}
+body{
+    margin-top:1%;
+    background-color: #4a0080;
+    background-image: url("../img/f.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center ; 
+    font-family: var(--fuente);
+
+      
+}
+
+#descricion-productos{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: var(--fuente);
+    text-align: justify;
+    margin-right: 20%;
+    color: #f3bd9c;
+    font-size: 110%;
+    background-color: #1b0235bd;
+    padding: 2%;
+}
+
+
+/** PARA EL MENÚ**/
+
+
+
+
+#menuu {
+    text-align: right;
+    background-color: #4a0080;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding:15px 0px;
+    width: 100%;
+    height: 50%;  
+    padding-top: 2%;
+    padding-bottom: 2%;
+    grid-column: span 11;
+}
+#perfil-dueño {
+    padding-left: 20px; 
+    width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 50%; /* Ajusta la altura de la imagen según sea necesario */
+    position: relative;
+    grid-column: span 1;
+    padding: 1;
+    margin-top: 10%;
+    background-color: #4a0080;
+    
+}
+
+
+#paleta-informacion {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    color:rgb(240, 124, 7);
+    background-color: #1b0235bd;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 300%; /* Ancho deseado */
+    font-size: 90%;
+    font-family:var(--fuente);
+}
+
+
+#perfil-dueño:hover #paleta-informacion {
+    display:block;
+    
+}   
+
+strong{
+    color: rgb(217, 211, 211);
+}
+.custom-icon {
+    font-size: 320%;
+    color:white
+}
+
+.selected {
+	background-color: rgb(240, 124, 7);
+  }
+    
+#menuu a {
+    text-align:end;
+    text-decoration:double;
+    font-size: 120%;  
+    
+}
+
+#contenido2{
+    display: flex;
+    background: red;
+    position: fixed;
+    
+}
+#menuu a.active {
+     
+    color: #ffffff;
+    text-align:end;
+    padding: 4% 1%;
+}
+
+#menuu a:hover {
+    background-color: #111;
+  }
+
+
+
+
+/*PARA EL CONTENIDO PRINCIPAL*/
+
+#cuerpo_pagina{
+    font-family: var(--fuente);
+    text-align: justify;
+    color: #fff;
+}
+
+#inicio{
+    margin-top: 15%;
+    color: #f1760a; 
+    font-family: var(--fuente);
+
+}
+
+#inicio::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* esto espara colocar el efecto en V del contenido principal*/
+    background-image: linear-gradient(180deg, #00000092 0%,#000000a9 100%), url("../img/fondo.jpeg");
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0, 100% 78%, 50% 100%, 0 80%);
+    z-index: -1;
+}
+
+#inicio p{
+    color: #ffffff;
+    padding-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 130%;
+    
+}
+#Fijo{
+    position:fixed;
+    width:100px;
+    height:100px;
+    left:1300px;
+    top:500px;
+    position: fixed;
+    background-image: url("../img/whatsapp.jpg");
+    background-size:cover;
+    border-radius: 50%;
+    z-index: 9999; /* Valor alto para asegurar que esté por encima de otros elementos */
+    
+}
+
+
+#cuerpo_pagina h1{
+    padding-top: 5%;
+    text-align: center;
+    text-decoration:underline;
+    font-size: 250%;
+    
+}
+
+.seccion_productos{
+    border: 1px solid rgb(255, 119, 0);
+    border-radius:3% ;
+    background-color: white;
+    
+}
+
+
+h3{
+    text-decoration:double;
+}
+.productos{
+    text-align: left;
+    font-style:oblique;
+    background-color: #0d0d0d8a;
+    border-radius: 5px;
+    padding: 1.5%;
+    margin-top: 20%;
+    width: 81.5%;
+    text-align: center;
+    
+}
+#pr{
+    color: red;
+    border-radius: 2px ;
+}
+ .pr2{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+p{
+    display:table;
+    grid-template-columns: auto; 
+    width:100%;
+    height:auto;
+}
+
+.p2{
+    margin-top: 8%;
+    color: #ff8d02;
+    padding: 2%;
+}
+
+
+
+
+
+/**
+        CARRUSELES
+**/
+
+.products{
+    
+    /*column-count: 3;  Divide el contenido en 2 columnas */
+    column-gap: 0.5px; /* Espacio entre las columnas */
+    grid-template-columns: repeat(6, 1fr);/* Divide el contenido en 6 columnas */
+    display: grid; /*permite dividir el contenrdor en n columnas*/
+   
+    
+}  
+.columna{
+    align-self: flex-end; /* coloca el contenido el div abajo */
+    margin: 1%;
+}
+.column {
+    grid-column: span 5;/* toma 5 de las 6 columnas de "products" */
+    margin: 1%;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    grid-column: span 1;
+}
+.container .card:hover
+{
+    height: 450px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:60%;
+    top:-45px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+}
+#prueba{
+    width: 100%;
+    height: 190px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    font-family: var(--fuente) ;
+}
+.container .card .content p{
+    font-family: var(--fuente);
+    text-align: justify;
+}
+
+.container .card .content .precios{
+    color: #c50404;
+}
+.container .card .content strong{
+    color: #070707;
+}
+
+
+.prueba2{
+    background-color: #fff;
+}
+
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+
+
+
+/**
+    PARA VISUALIZAR LOS PDF
+
+*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.moda, .fade, #modal2{
+    z-index: 9999;
+}
+
+
+.modal-content {
+background-color: #fefefe;
+margin: 10% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+max-width: 800px;
+position: relative;
+}
+
+.close {
+color: #aaa;
+position: absolute;
+top: 10px;
+right: 20px;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+iframe {
+width: 100%;
+height:480px;
+}
+
+
+
+/**
+    PARA DEL FORMULARIO
+
+*/
+
+.FROMULARIO {
+    margin-top: 20%;
+    background-color: rgb(34, 34, 36);
+    width: 100%;
+    align-items: center;
+    display: block;
+}
+
+label, textarea{
+   
+    height: 50%px; /* Ajusta la altura según tus necesidades */
+    margin-right: 60%px; /* Ajusta el margen entre los elementos según tus necesidades */
+
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(34, 34, 36);
+    color: white;
+    border-radius: 5px;
+   
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+font-size: 16px;
+}
+
+.form-container button {
+display: block;
+width: 100%;
+padding: 10px;
+font-size: 16px;
+background-color:rgb(240, 92, 7);
+color: rgb(253, 252, 252);
+border: none;
+border-radius: 5px;
+}
+
+/**
+        PIE DE PÁGINA
+**/
+#pie_pagina{
+    display: grid;
+    background-color: #000000fd;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+   grid-template-columns: repeat(3,1fr);
+}
+
+#pie_pagina .bi{
+    padding: 5%;
+    color: rgb(255, 255, 255) !important;
+    font-size: 300% !important;
+}
+
+#pie_pagina .h1, .pie{
+    color: #fbe3e3;
+}
+
+.enlaces{
+    grid-column: span 1;
+}
+
+#pie_pagina p{
+    color: rgb(255, 255, 255) 
+}
+   
+
+  
+/**
+  EL CONTENEDOR QUE SE DIVIDE EN COLUNAS YA NO SE DIVIDIRÁ AL
+  PASAR LOS PIXELES 
+
+*/
+  @media (max-width: 768px){
+    /*  PUEDES AGREGAR MÁS DIV EN CASO QUE LO NECESITES      */
+    .products{
+        /* Estilos para una columna en pantallas de hasta 800px */
+        /* Puedes modificar estos estilos según tus necesidades */
+        column-gap: 1px; /* Espacio entre las columnas */
+        grid-template-columns: repeat(1, 1fr);/* Divide el contenido en 6 columnas */
+        display: grid; 
+        margin: 1%;
+    }
+
+    #pr{
+        column-gap: 1px; /* Espacio entre las columnas */
+        grid-template-columns: repeat(3, 1fr);/* Divide el contenido en 6 columnas */
+        display: grid; 
+    }
+    header {
+        height: 5%;
+        font-size: 100%;
+        }
+   
+    .column {
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    #inicio::before{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* esto espara colocar el efecto en V del contenido principal*/
+        background-image: linear-gradient(180deg, #00000092 0%,#000000a9 100%), url("../img/fondo.jpeg");
+        background-size: cover;
+        clip-path: polygon(0% 0%, 100% 0%,100% 50%, 50% 60%, 0% 50%);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 390px){
+    #pr{
+        column-gap: 1px; /* Espacio entre las columnas */
+        grid-template-columns: repeat(3, 1fr);/* Divide el contenido en 6 columnas */
+        display: grid; 
+    }
+      
+    .column {
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    header {
+    height: 5%;
+    font-size: 60%;
+    }
+    #perfil-dueño {
+      
+        height: 48%; /* Ajusta la altura de la imagen según sea necesario */
+    
+        
+    }
+    .products{
+        display: block; 
+        margin: 1%;
+       text-align: grid;
+    }
+
+    #inicio {
+        font-size: 70%;
+    }
+
+    #descricion-productos{
+        font-size: 70%;
+        width: 100%;
+        margin-top: 2%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    button{
+        font-size: 10%;
+    }
+
+    
+}
+
+
+
+
+
+
+
+ 
+  
+  
+  
+  
+  
+  
+
+
+
+

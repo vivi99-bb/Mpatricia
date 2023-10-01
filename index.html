@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Principal_Mpatricia</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+         emailjs.init("8yHtYe6i-pyeDkvMB");
+     })();
+    </script>
+</head>
+<body >
+   
+    <!-- https://boxicons.com/?query=social 
+    https://icons.getbootstrap.com/icons/geo/
+-->
+    <header>
+        <!-- Perfil -->
+        <div id="perfil-dueño" class="d-flex align-items-center">
+            <i class="bi bi-person-fill custom-icon"></i>
+            <div id="paleta-informacion">
+                <p><strong>Nombre:</strong> Monica Álvarez</p>
+                <p><strong>Dirección:</strong> Calle 15 A</p>
+                <p><strong>Email:</strong> monicapatriciaa701@gmail.com</p>
+                <p><strong>Teléfono:</strong> 3007239476</p>
+                <a href="ubicacion2.html"><button class="btn btn-primary" data-bs-target="#uno"> <i class="bi bi-geo"></i> Ubicame!</button></a>
+                
+            </div>
+        </div>
+         <!--contenedor para menú-->
+        <div id="menuu" class="contenedor-ancho  ">
+            
+            <nav id="floating-menu">
+                <a class="active " href="#inicio" onclick="seleccionarOpcion(1)"> <strong>Quienes somos</strong> </a>
+                <a class="active" href="#p2" onclick="seleccionarOpcion(2)"> <strong>Productos</strong> </a>
+                <a class="active" href="#formulario" onclick="seleccionarOpcion(3)"> <strong>Contáctenos</strong></a>
+            </nav>
+            
+        </div>
+      </header>
+      
+    <!--Empezamos por crear el contenedor General o prtincipal-->
+    <div id="Principal" >
+
+        <!--se crea el contenedor para el cuerpo de la página-->
+        <div id="cuerpo_pagina">
+            <!--img guardamos la imagen para omnilife-->
+           
+
+            <!--Empezamos creando el aparto sobre la empresa-->
+            <div id="inicio">               
+                <h1>Omnilife y Seytú - Distribuidora Mpatricia</h1>
+                <p>Somos una empresa mexicana con mas de 30 años de experiencia, líder a nivel mundial en suplementos alimenticios y línea de belleza ( Omnilife y Seytú) con presencia en 20 países, entre ellos Colombia.
+                    Contamos con una amplia gama de productos cuya finalidad es mejorar la vida de nuestros Distribuidores y consumidores.
+                    Al igual que mantenemos un control óptimo de calidad en nuestros productos que llegan a miles de familias para garantizar los exelentes beneficios
+                    que traen nuestros productos.</p>
+            </div>
+  
+           
+
+            <!--PARTE sobre los productos BELLEZA-->
+            <div class="p2" id="p2">
+
+                <!-- DESCRIPCIÓN DE PRODUCTOS -->
+                <div id="descricion-productos">
+                    <p>Omnilife ofrece una amplia gama de productos de nutrición y bienestar. Estos incluyen suplementos alimenticios, vitaminas, minerales, bebidas energéticas y productos para el control de peso. Los productos de Omnilife están diseñados para proporcionar nutrientes esenciales y apoyar un estilo de vida saludable.</p>
+                    <p>Seytú es la línea de productos de cuidado personal de Omnilife. Incluye una variedad de productos para el cuidado de la piel, el cabello, el maquillaje y el cuidado personal en general. Estos productos están formulados con ingredientes de alta calidad y se enfocan en mejorar y mantener la apariencia y salud de la piel y el cabello.</p>
+                </div>
+
+                <h3 class="productos" id="pro">Productos de belleza Seytú</h3>
+                <div class="p  products " >
+
+                    <div class="column container d-flex align-items-center justify-content-center position-relative flex-wrap">
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" src='./img/belleza/baseLiquidaUP+.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Maquillaje Líquido UP+ FPS 15</h4>
+                                <p>Es una formula a prueba agua y sudor, cobertura  de media total con excelente acabado homogeneo y mate. Además esté enriquecida con acivos anti edad.<strong> Variados tonos</strong></p>
+                                <p class="precios"><strong>Precio: </strong> $106.850</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img src='./img/belleza/crema protectora solar.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>Crema Protectora Solar</h4>
+                                <p>Ofrece una protección de amplio aspectro contra el daño solar: protección de los rayos UVA/UVB, libre de alcohol, resistente al agua y sin sensación grasa.</p>
+                                <p class="precios"><strong>Precio: </strong> $68.700</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img src='./img/belleza/espuma-limpiadora.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>Espuma Limpiadora Facial</h4>
+                                <p>Ofrece una limpieza profunda.<br> Es ideal para limpieza diaria de cutis, remueve impurezas de la piel, brinda hidratación y suavidad con sensación de frescura. Además es  para todo tipo de piel.</p>
+                                <p class="precios"><strong>Precio: </strong> $60.000</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" src='./img/belleza/Labial-Hidratante.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Labial Hidratante</h4>
+                                <p>Es un labial que brinda una corbertura completa y uniforme para lucir impeclables. Es de mayor fijación con una textura suave y humentante, ideal para mantener nuestros labios siempre hermosos.<strong> Variados tonos</strong></p>
+                                <p class="precios"><strong>Precio: </strong> $50.500</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" src='./img/belleza/maquillajeCompacto.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Maquillaje Compacto 2 en 1</h4>
+                                <p>Poporciona una coberturamedia, acabado aterciopelado y es Resistente al agua. Además su formula es inteligente 2 en 1: Húmedo/ Seco, y de rigen mineral. <strong> Variados tonos</strong></p>
+                                <p class="precios"><strong>Precio: </strong> $86.100</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" src='./img/belleza/mascarilla-reparadora-capilar-seytu.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>Mascarilla Reparadora Capilar</h4>
+                                <p>Brinda una nutrición Intensa y control de frizz, acondiciona intensamente el cabello, contribulle a reparar el cabello frágil, reseco y dañado. Brinda un cabello sedoso, manejable y brillante. </p>
+                                <p class="precios"><strong>Precio: </strong> $57.500</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img src='./img/belleza/Sahmpoo-Cuidado especial.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>Shampoo de Cuidado especial</h4>
+                                <p>Permite fortalecer el cabello, hidratarlo y acondicionarlo de forma activa. Otorga brillo, suavidad, flexibilidad  y fuerza al cabello</p>
+                                <p class="precios"><strong>Precio: </strong> $48.950</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img class="prueba2" id="prueba" src='./img/belleza/suero-contornoDeOjos.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Suero para Contorno de Ojos</h4>
+                                <p> <strong>Hidratación Profunda: </strong>Es ideal para los multiples cuidados  del área de los ojos como disminuir las ojeras, proporciona hidratación y elasticidad, entre otros beneficios.</p>
+                                <p class="precios"><strong>Precio: </strong> $47.000</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img src='./img/belleza/System.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>Crema de Día FPS 30</h4>
+                                <p>Es un estimulante para la producción de colágeno y elasticidad que a la vez colabora a mejorar la textura y firmeza de la piel. Además tiene propiedades antioxidadantes e hidratantes. Proteje contra rayos UVA/UVB</p>
+                                <p class="precios"><strong>Precio: </strong> $132.500</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div id="pr" class="columna " >
+                       <div class="pr2">
+                            <a href="./Archivos/belleza.pdf" target="_blank" download>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uno"> <i class="bi bi-box-arrow-in-down"></i> Descargar Catálogo</button>
+                            </a>
+                       </div>
+                        <div class="pr2">
+                            <button id="open-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uno">Ver Catálogo Completo</button>
+                            <div id="pdf-modal" class="modal">
+                                <div class="modal-content">
+                        <span class="close">Cerrar&times;</span><br>
+                                  <iframe id="pdf-viewer" src="./Archivos/belleza.pdf" frameborder="0"></iframe>
+                                </div>
+                              </div>
+                        </div>
+                    </div> 
+
+                    
+                </div>
+            </div>
+
+
+              <!--PARTE sobre los productos NUTRICÓN-->
+              <div class="p2">
+                <h3 class="productos">Productos de Nutrición Omnilife</h3>
+                <div class="products">
+
+
+                    <div class="column container d-flex align-items-center justify-content-center position-relative flex-wrap">
+
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/AloeBeta.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Aloe Beta - 960ml</h4>
+                                <p>es una bebida sabor piña que contiene gel de sábila, fibra y vitamina E</p>
+                                <p class="precios"><strong>Precio: </strong> $53.100</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/Aqtua.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Aqtúa</h4>
+                                <p>Suplemento dietario, sabor mandarina, que contiene
+                                    coenzima Q10, L-carnitina, magnesio y D-ribosa.
+                                    Con estevia, endulzante de origen natural.</p>
+                                <p class="precios"><strong>Precio: </strong> $163.800</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/Biocros-supreme.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>Biocros </h4>
+                                <p>Mezcla en polvo para preparar bebida energizante, que
+                                    contiene vitaminas del complejo B: tiamina B1, riboflavina
+                                    B2, niacina B3, ácido pantoténico B5, piridoxina B6,
+                                    ácido fólico B9, B12, vitaminas C y E, glicina.</p>
+                                <p class="precios"><strong>Precio: </strong> $102.750</p>
+                            </div>
+                        </div>
+
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/cafeLife.png'>
+                            </div>
+                            <div class="content">
+                                <h4>Cafelife Plus</h4>
+                                <p>Suplemento dietario, que contiene café colombiano,
+                                    extracto de café verde (Coffea canephora robusta
+                                    Pierre), cromo e inulina (fibra soluble). Con estevia,
+                                    endulzante de origen natural. </p>
+                                <p class="precios"><strong>Precio: </strong> $93.900</p>
+                            </div>
+                        </div>
+
+                         <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" src='./img/nutricion/Ego-life.jpeg'>
+                            </div>
+                            <div class="content">
+                                <h4>EGO</h4>
+                                <p><strong> 39 ml</strong> <br>
+                                    Suplemento dietario, sabor frutas del bosque que
+                                    contiene extracto de regaliz, colina, glicina, vitaminas
+                                    del complejo B y estevia, endulzantes de origen natural.
+                                </p>
+                                <p class="precios"><strong>Precio: </strong> $10.500</p>
+                            </div>
+                        </div>
+
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba"  src='./img/nutricion/Fem-Plus.png'>
+                            </div>
+                            <div class="content">
+                                <h4>FEM PLUS</h4>
+                                <p>Mezcla en polvo, sabor durazno, que contiene extracto de
+                                    semilla de uva, extracto de lúpulo, vitamina A, ácido fólico,
+                                    C, D, E y K, además de minerales: calcio, magnesio y zinc.
+                                    Con glicósidos de esteviol, endulzante de origen natural. </p>
+                                <p class="precios"><strong>Precio: </strong> $$115.200</p>
+                            </div>
+                        </div>
+
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/omniplus.png'>
+                            </div>
+                            <div class="content">
+                                <h4>OMNI PLUS</h4>
+                                <p>Concentrado para preparar bebida, sabor a frutas, que
+                                    contiene vitamina A, vitaminas del complejo B, manganes,selenio, entre otros</p>
+                                <p class="precios"><strong>Precio: </strong> $106.850</p>
+                            </div>
+                        </div>
+
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/thermogentea.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>THERMOGEN TEA LOMÓN</h4>
+                                <p>Suplemento dietario, sabor limón, que contiene
+                                    cromo. Con estevia, endulzante de origen natural. Acompáñalo con una alimentacion
+                                    balanceada y ejercicio regular.</p>
+                                <p class="precios"><strong>Precio: </strong> $1157.850</p>
+                            </div>
+                        </div>
+
+                        <div class="card d-flex position-relative flex-column">
+                            <div class='imgContainer'>
+                                <img id="prueba" class="prueba2" src='./img/nutricion/powrMaker.jpg'>
+                            </div>
+                            <div class="content">
+                                <h4>POWER MAKER</h4>
+                                <p>Mezcla en polvo, sabor a naranja, que contiene arginina,
+                                    colina, glicina, vitamina A, ácido pantoténico B5, C, E,
+                                    además de minerales: zinc, cobre y cromo. </p>
+                                <p class="precios"><strong>Precio: </strong> $115.850</p>
+                            </div>
+                        </div>
+
+
+                        </div>
+                        
+                    
+
+                    <!-- ARCHIVOS  -->
+                   
+                    <div id="pr" class="columna " >
+                       <div class="pr2">
+                            <a href="./Archivos/nutrición.pdf" target="_blank" download>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uno"> <i class="bi bi-box-arrow-in-down"></i> Descargar Catálogo</button>
+                            </a>
+                       </div>
+
+                        <div class="pr2">
+                            <button id="open-modal2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uno">Ver Catálogo Completo</button>
+                            <div id="pdf-modal2" class="modal">
+                                <div class="modal-content">
+                            <span class="close close2">Cerrar&times;</span><br>
+                                  <iframe id="pdf-viewer" src="./Archivos/nutrición.pdf" frameborder="0"></iframe>
+                                </div>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+
+                </div>
+             </div>
+        </div>
+
+        <div class="whatsapp">
+            <a href="https://wa.me/3104424432">
+                <div id="Fijo">
+                </div>
+            </a>
+            
+        </div>
+    </div>
+     <!--
+            PARA EL FROMULARIO 
+        SE AGREGA EL CONTACTAME
+           -->
+           <div class="FROMULARIO" id="formulario">
+            <div class="form-container">
+                <h2>Contactenos</h2>
+                <form onsubmit="enviarCorreo()">
+                <!-- Agrega tus campos de formulario aquí -->
+                <label for="">Su nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="">Correo de contacto:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+                
+                <button type="submit">Enviar</button>
+                </form>
+              </div>
+           </div>
+
+<!--Se crea el contenedor para el pie de página-->
+
+<footer>
+    <div id="pie_pagina">
+        
+            <div class="enlaces">
+                <a class="icons" href="https://www.facebook.com/patricia.alvarezlop" target="_blank"><i class="bi bi-facebook"></i></a>
+                <p>Mi perfil</p>
+            </div>
+
+            <div class="enlaces">
+                <a class="icons" href="https://www.facebook.com/77mpal" target="_blank"><i class="bi bi-facebook"></i></a>
+                <p>Mi Página, Sígueme!</p>
+            </div>
+            
+            <div class="enlaces">
+                <a class="icons" href="https://wa.me/3104424432" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <p>Escríbeme!</p>
+            </div>
+        
+        <!-- <h1 class="pie">Pie de página, van los logos de las redes sociales</h1>
+        <p class="pie">el logo de whatsapp va simpre flotante fuera del pie de página</p> -->
+        <br> <p>&copy; 2023. Todos los derechos reservados</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script src="./js/js.js"></script> 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+</html>
